@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+:root {
+  --title-font: "Playfair Display", serif;
+  --body-font: "Open Sans", sans-serif;
+
+  --forest-green: #618264;
+  --sage-green: #79ac78;
+  --minty-green: #b0d9b1;
+  --soft-green: #d0e7d2;
+  --white: #ffffff;
+  --black: #0d0d0d;
+
+  --bg-opacity: 1;
+  --text-opacity: 1;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  scrollbar-gutter: stable;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title-font);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
