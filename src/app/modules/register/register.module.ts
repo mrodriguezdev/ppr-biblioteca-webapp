@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AuthRoutingModule } from './auth-routing.module';
-import { AuthPageComponent } from './pages/auth-page.component';
+import { RegisterRoutingModule } from './register-routing.module';
 import { SharedModule } from '@shared/shared.module';
+import { RegisterPageComponent } from './pages/register-page.component';
 
 
 @NgModule({
   declarations: [
-    AuthPageComponent
+    RegisterPageComponent
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule,
+    RegisterRoutingModule,
     SharedModule
   ]
 })
-export class AuthModule { }
+export class RegisterModule { }
