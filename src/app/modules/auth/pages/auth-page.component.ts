@@ -7,11 +7,11 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./auth-page.component.css'],
 })
 export class AuthPageComponent {
-  
+
   formSignIn: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.email, Validators.required]),
     password: new FormControl('', [Validators.required])
-  }); 
+  });
 
   signIn() {
     const { email, password } = this.formSignIn.value;

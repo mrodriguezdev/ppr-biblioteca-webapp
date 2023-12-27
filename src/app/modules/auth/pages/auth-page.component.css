@@ -7,11 +7,6 @@
   height: 75%;
 }
 
-.form.signup {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .form-content header {
   font-size: 2.8rem;
   font-weight: 600;
@@ -91,7 +86,7 @@ hr {
   justify-content: center;
 }
 
-@media screen and (width >= 400px) {
+@media screen and (width >=400px) {
   .form {
     height: 90%;
   }

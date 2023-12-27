@@ -1,15 +1,17 @@
 <main class="forms">
-    
+
     <!-- SignIn Form -->
-    <section class="form signin">
+    <section class="form">
         <div class="form-content">
             <header>Inicio de sesión</header>
             <form (ngSubmit)="signIn()" [formGroup]="formSignIn">
                 <div class="field input-field">
-                    <input formControlName="email" type="email" placeholder="Correo electrónico" name="email" id="email">
+                    <input formControlName="email" type="email" placeholder="Correo electrónico" name="email"
+                        id="email">
                 </div>
                 <div class="field input-field">
-                    <input formControlName="password" type="password" placeholder="Contraseña" name="password" id="password">
+                    <input formControlName="password" type="password" placeholder="Contraseña" name="password"
+                        id="password">
                     <i></i>
                 </div>
                 <div class="form-link">
@@ -21,7 +23,8 @@
             </form>
 
             <div class="form-link">
-                <span>No tienes una cuenta? <a class="link signup-link" [routerLink]="['/register']">Registrarse</a></span>
+                <span>No tienes una cuenta? <a class="link signup-link"
+                        [routerLink]="['/register']">Registrarse</a></span>
             </div>
         </div>
 
