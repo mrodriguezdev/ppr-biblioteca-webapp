@@ -17,6 +17,9 @@ export class AuthPageComponent {
 
   constructor(private authService : AuthService, private router : Router) {}
 
+  /**
+   * Inicia el proceso de inicio de sesión.
+   */
   signIn() {
     const { email, password } = this.formSignIn.value;
     this.authService.sendCredentials(email, password)
