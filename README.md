@@ -1,28 +1,18 @@
-# PprBibliotecaWebapp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # ppr-biblioteca-webapp
+
+Este proyecto, desarrollado por **mrodriguezdev**, tiene como objetivo poner en práctica habilidades en el desarrollo de aplicaciones web modulares con Angular. Para obtener más información sobre Angular, visita [angular.io](https://angular.io//).
+
+
+> [!NOTE]
+> **PPR:** Este proyecto es de carácter personal y se ha creado con el propósito de práctica y aprendizaje. La abreviatura "PPR" se refiere a "Proyecto Personal de Práctica".
+
+## Descripción del proyecto
+Este proyecto se centra en el desarrollo de un sistema bibliotecario integral. A través de esta aplicación, los usuarios podrán crear sus perfiles individuales, lo que les brindará acceso a funcionalidades clave como búsqueda de libros, realización de reservas y gestión de préstamos.
+
+> [!IMPORTANT]
+> Este proyecto constituye la interfaz de usuario (frontend) de un sistema bibliotecario más amplio. En conjunto con esta aplicación, se encuentran otros dos repositorios esenciales:
+
+> - **[API Backend](https://github.com/mrodriguezdev/ppr-apibiblioteca):** Contiene la lógica de negocio y gestión de datos para el sistema bibliotecario.
+> - **[Database Script](https://github.com/mrodriguezdev/ppr-biblioteca-db-script):** Incluye el script de la base de datos para facilitar su implementación.
+
+> La colaboración de estos tres repositorios, el frontend, la API y el script de la base de datos, permite un despliegue completo y funcional del sistema bibliotecario, proporcionando así una solución integral para la búsqueda, reserva y gestión de libros, respaldada por una sólida infraestructura técnica.
