@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { RegisterService } from '../services/register.service';
+import { Router } from '@angular/router';
+import { Usuario } from '@core/models/Usuario';
 
 @Component({
   selector: 'app-register-page',
@@ -15,11 +18,25 @@ export class RegisterPageComponent {
     confirmPassword: new FormControl('', [Validators.required])
   });
 
+  constructor(private registerService : RegisterService, private router: Router) {}
+
   signUp() {
     const { name, email, password, confirmPassword } = this.formSignUp.value;
-    console.log(name);
-    console.log(email);
-    console.log(password);
-    console.log(confirmPassword);
+    const usuario : Usuario = {
+      nombre: name, 
+      correo: email, 
+      password: password
+    };
+
+    this.registerService.registerUser(usuario)
+      .subscribe({
+        next: () => {
+          this.router.navigate(['/', 'auth']);
+        }, 
+        error: (err) => {
+          const { content } = err.error;
+          console.error('Algo sucedió al registrar al nuevo usuario. Error: ', content);
+        }
+      });
   }
 }
