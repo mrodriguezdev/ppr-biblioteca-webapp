@@ -12,7 +12,7 @@ Este proyecto se centra en el desarrollo de un sistema bibliotecario integral. A
 > [!IMPORTANT]
 > Este proyecto constituye la interfaz de usuario (frontend) de un sistema bibliotecario más amplio. En conjunto con esta aplicación, se encuentran otros dos repositorios esenciales:
 
-> - **[API Backend](https://github.com/mrodriguezdev/ppr-apibiblioteca):** Contiene la lógica de negocio y gestión de datos para el sistema bibliotecario.
-> - **[Database Script](https://github.com/mrodriguezdev/ppr-biblioteca-db-script):** Incluye el script de la base de datos para facilitar su implementación.
+- **[API Backend](https://github.com/mrodriguezdev/ppr-apibiblioteca):** Contiene la lógica de negocio y gestión de datos para el sistema bibliotecario.
+- **[Database Script](https://github.com/mrodriguezdev/ppr-biblioteca-db-script):** Incluye el script de la base de datos para facilitar su implementación.
 
-> La colaboración de estos tres repositorios, el frontend, la API y el script de la base de datos, permite un despliegue completo y funcional del sistema bibliotecario, proporcionando así una solución integral para la búsqueda, reserva y gestión de libros, respaldada por una sólida infraestructura técnica.
+La colaboración de estos tres repositorios, el frontend, la API y el script de la base de datos, permite un despliegue completo y funcional del sistema bibliotecario, proporcionando así una solución integral para la búsqueda, reserva y gestión de libros, respaldada por una sólida infraestructura técnica.
