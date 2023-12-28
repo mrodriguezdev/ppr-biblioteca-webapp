@@ -1,0 +1,52 @@
+<main class="forms">
+    <!-- SignUp Form -->
+    <section class="form">
+        <div class="form-content">
+            <header>Registrarse</header>
+            <form (ngSubmit)="signUp()" [formGroup]="formSignUp">
+                <div class="field input-field">
+                    <input formControlName="name" type="text" placeholder="Nombre completo" name="name" id="name">
+                </div>
+                <div class="field input-field">
+                    <input formControlName="email" type="email" placeholder="Correo electrónico" name="email"
+                        id="email">
+                </div>
+                <div class="field input-field">
+                    <input formControlName="password" type="password" placeholder="Crear contraseña" name="password"
+                        id="password">
+                    <i></i>
+                </div>
+                <div class="field input-field">
+                    <input formControlName="confirmPassword" type="password" placeholder="Confirmar contraseña"
+                        name="confirmPassword" id="confirmPassword">
+                    <i></i>
+                </div>
+                <div class="field button-field">
+                    <button [disabled]="!formSignUp.valid">Registrarse</button>
+                </div>
+            </form>
+
+            <div class="form-link">
+                <span>Already have an account? <a [routerLink]="['/auth']" class="link login-link">Iniciar
+                        sesión</a></span>
+            </div>
+
+        </div>
+
+        <hr class="line">
+
+        <!--         <div class="media-options">
+            <a href="#" class="field facebook">
+                <i></i>
+                <span>Iniciar sesión con Facebook</span>
+            </a>
+        </div>
+        <div class="media-options">
+            <a href="#" class="field google">
+                <i></i>
+                <span>Iniciar sesión con Google</span>
+            </a>
+        </div> -->
+
+    </section>
+</main>
