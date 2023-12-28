@@ -25,7 +25,7 @@ export class AuthPageComponent {
     this.authService.sendCredentials(email, password)
     .subscribe({
       next: () => {
-        this.router.navigate(['', '/']);
+        this.router.navigate(['/', 'home']);
       },
       error: (err) => {
         const { content } = err.error;
