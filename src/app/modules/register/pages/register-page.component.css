@@ -21,6 +21,21 @@
   border-radius: .6rem;
 }
 
+.input-field-password {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.input-field-password i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  color: var(--forest-green);
+}
+
 .field input,
 .field button {
   height: 100%;

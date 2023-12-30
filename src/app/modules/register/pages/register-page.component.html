@@ -11,15 +11,17 @@
                     <input formControlName="email" type="email" placeholder="Correo electrónico" name="email"
                         id="email">
                 </div>
-                <div class="field input-field">
-                    <input formControlName="password" type="password" placeholder="Crear contraseña" name="password"
-                        id="password">
-                    <i></i>
+                <div class="field input-field input-field-password">
+                    <input formControlName="password" type="{{showPassword ? 'text' : 'password'}}"
+                        placeholder="Crear contraseña" name="password" id="password">
+                    <i [ngClass]="{'uil-eye': !showPassword, 'uil-eye-slash': showPassword}"
+                        (click)="showPassword = !showPassword"></i>
                 </div>
-                <div class="field input-field">
-                    <input formControlName="confirmPassword" type="password" placeholder="Confirmar contraseña"
-                        name="confirmPassword" id="confirmPassword">
-                    <i></i>
+                <div class="field input-field input-field-password">
+                    <input formControlName="confirmPassword" type="{{showConfirmPassword ? 'text' : 'password'}}"
+                        placeholder="Confirmar contraseña" name="confirmPassword" id="confirmPassword">
+                    <i [ngClass]="{'uil-eye': !showConfirmPassword, 'uil-eye-slash': showConfirmPassword}"
+                        (click)="showConfirmPassword = !showConfirmPassword"></i>
                 </div>
                 <div class="field button-field">
                     <button [disabled]="!formSignUp.valid">Registrarse</button>

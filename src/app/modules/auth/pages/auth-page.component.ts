@@ -16,6 +16,8 @@ export class AuthPageComponent {
     password: new FormControl('', [Validators.required])
   });
 
+  showPassword: boolean = false;
+
   constructor(private authService: AuthService, private router: Router, private notification: NotificationService) { }
 
   /**

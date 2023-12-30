@@ -10,13 +10,13 @@ export class NotificationService {
 
   /**
    * Muestra una notificación de éxito.
-   * @param text Mensaje que se mostrará en la notificación.
+   * @param detalle Mensaje que se mostrará en la notificación.
    */
-  showSuccessNotification(text: string) {
+  showSuccessNotification(detalle: string) {
     Swal.fire({
       icon: 'success',
-      title: 'Éxito',
-      text: text,
+      title: '¡Éxito!',
+      text: detalle,
       showConfirmButton: false,
       timer: 2000,
     });
@@ -24,17 +24,31 @@ export class NotificationService {
 
   /**
    * Muestra una notificación de error.
-   * @param text Mensaje que se mostrará en la notificación.
+   * @param detalle Mensaje que se mostrará en la notificación.
    */
-  showErrorNotification(text: string) {
+  showErrorNotification(detalle: string) {
     Swal.fire({
       icon: 'error',
       title: 'Oops..',
-      text: text,
+      text: detalle,
       showConfirmButton: true,
       footer: 'Comunícate con nuestro soporte técnico para obtener ayuda.',
       timer: 2500,
     });
+  }
+
+  /**
+   * Muestra una notificación de información.
+   * @param detalle Mensaje que se mostrará en la notificación.
+   */
+  showInfoNotification(detalle: string) {
+    Swal.fire({
+      icon: 'info',
+      title: '¡Atención!',
+      text: detalle,
+      showConfirmButton: true,
+      timer: 2500
+    })
   }
 
   /**
