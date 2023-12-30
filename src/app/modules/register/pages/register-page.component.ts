@@ -25,12 +25,17 @@ export class RegisterPageComponent {
    * Inicia el proceso de registro de un nuevo usuario.
    */
   signUp() {
-    const { name, email, password, confirmPassword } = this.formSignUp.value;
+    const { name, email, password } = this.formSignUp.value;
     const usuario: Usuario = {
       nombre: name,
       correo: email,
       password: password
     };
+
+    if (!this.validaPasswords()) {
+      this.notification.showErrorNotification('Las contraseñas no coinciden. Por favor, verifica y vuelve a intentarlo.');
+      return;
+    }
 
     this.notification.showLoadNotification('Registrando usuario...');
     this.registerService.registerUser(usuario)
@@ -45,5 +50,17 @@ export class RegisterPageComponent {
           this.notification.showErrorNotification('Ocurrió un error al registrar al nuevo usuario');
         }
       });
+  }
+
+  /**
+   * Válida las contraseñas ingresadas en el formulario de registro.
+   * @returns {boolean} true si las condiciones son iguales, false si no lo son.
+   */
+  validaPasswords(): boolean {
+    const { password, confirmPassword } = this.formSignUp.value;
+
+    const arePasswordsEqual = (password === confirmPassword);
+
+    return arePasswordsEqual;
   }
 }
